@@ -4,12 +4,40 @@ body {
     margin: 0;
     background-color: #282828;
     font-family: "Jost", sans-serif;
+    color: #fff;
 }
 .container {
     width: 1200px;
     margin: 0 auto;
 }
 
+.btn {
+    min-width: 200px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+.btn-main {
+    background-color: #c7a17a;
+}
+
+.btn-main:hover {
+    background-color: #6a3807;
+}
+.btn-secondary {
+    border: 1px solid #666681;
+}
+.btn-secondary:hover {
+    background-color: #666681;
+}
+
+/* Header styles */
 .header {
     border-bottom: 1px solid #32323d;
 }
@@ -106,3 +134,108 @@ body {
     background-color: #c7a17a;
     display: block;
 }
+
+/* Header styles end */
+/* Intro styles */
+.intro {
+    margin-bottom: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.intro:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(2, 2, 4, 0.55);
+}
+
+.intro_wrapper {
+    padding: 20px 0;
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.intro__block {
+    max-width: 565px;
+}
+.intro__title {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.44;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.intro__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+
+    color: #dfdfdf;
+    margin: 0 0 35px;
+}
+
+.intro__actions {
+    display: flex;
+}
+.intro__actions .btn-main {
+    margin-right: 20px;
+}
+/* intro stles end */
+/* info styles start  */
+.info {
+    background-color: #282828;
+}
+
+.info__block {
+    display: flex;
+    border-radius: 11px;
+    background-color: #14141d;
+    /* overflow: hidden; */
+    margin-bottom: 80px;
+}
+
+.info__img-wrapper {
+    position: relative;
+}
+
+.info__img-wrapper:after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+}
+
+.info__img {
+    /* width: 100%;
+    height: 100%;
+    object-fit: cover; */
+    border-radius: 11px 0 0 11px;
+}
+
+.info_content {
+    padding: 30px;
+}
+.info__title {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.info__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #dfdfdf;
+}
+
+/* info styles end  */
